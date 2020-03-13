@@ -28,9 +28,15 @@ export default class ReactAntBaiduPanInput extends Component {
 
   constructor(inProps) {
     super(inProps);
+    const { value, defaultValue } = this.props;
     this.state = {
-      value: []
+      value: this.getValue(value || defaultValue)
     };
+  }
+
+  getValue(inValue) {
+    const values = inValue.match(/链接:(.*?)\s+密码:(.*)?/);
+    return { url: values[1].trim(), key: values[2].trim() };
   }
 
   get tableView() {
@@ -56,8 +62,7 @@ export default class ReactAntBaiduPanInput extends Component {
   handleChange = (inEvent) => {
     const { value } = inEvent.target;
     const { onChange } = this.props;
-    const values = value.match(/链接:(.*?)\s+密码:(.*)?/);
-    const target = { value: { url: values[1].trim(), key: values[2].trim() } };
+    const target = { value: this.getValue(value) };
     this.setState(target, () => {
       onChange({ target });
     });
