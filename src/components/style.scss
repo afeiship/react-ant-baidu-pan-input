@@ -1,0 +1,16 @@
+$react-ant-baidu-pan-input-options: () !default;
+
+.react-ant-baidu-pan-input {
+  &__table {
+    &,
+    td,
+    th {
+      border: 1px solid #ccc;
+    }
+
+    td,
+    th {
+      padding: 5px;
+    }
+  }
+}
