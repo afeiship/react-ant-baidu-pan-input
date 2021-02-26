@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import noop from '@feizheng/noop';
-import objectAssign from 'object-assign';
-import { Popover, Input, Icon } from 'antd';
+import noop from '@jswork/noop';
+import { Popover, Input } from 'antd';
 
 const CLASS_NAME = 'react-ant-baidu-pan-input';
 
