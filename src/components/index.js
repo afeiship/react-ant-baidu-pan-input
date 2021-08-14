@@ -34,8 +34,8 @@ export default class ReactAntBaiduPanInput extends Component {
 
   getValue(inValue) {
     if (!inValue) return {};
-    const values = inValue.match(/链接:(.*?)\s+提取码:(.*)?/);
-    return { url: values[1].trim(), key: values[2].trim() };
+    const values = inValue.match(/链接:(.*?)\s+([\u4e00-\u9fa5]+码):(.*)?/);
+    return { url: values[1].trim(), key: values[3].trim() };
   }
 
   get tableView() {
