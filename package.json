@@ -1,6 +1,6 @@
 {
   "name": "@jswork/react-ant-baidu-pan-input",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Baidu pan input for antd.",
   "main": "dist/index.js",
   "scripts": {
