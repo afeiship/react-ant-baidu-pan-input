@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import noop from '@jswork/noop';
 import { Popover, Input } from 'antd';
+import nxBaiduPanUrlKey from '@jswork/next-baidu-pan-url-key';
 
 const CLASS_NAME = 'react-ant-baidu-pan-input';
 
@@ -33,9 +34,7 @@ export default class ReactAntBaiduPanInput extends Component {
   }
 
   getValue(inValue) {
-    if (!inValue) return {};
-    const values = inValue.match(/链接:(.*?)\s+([\u4e00-\u9fa5]+码):(.*)?/);
-    return { url: values[1].trim(), key: values[3].trim() };
+    return inValue ? nxBaiduPanUrlKey(inValue) : {};
   }
 
   get tableView() {
