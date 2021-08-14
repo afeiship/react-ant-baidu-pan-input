@@ -12,7 +12,7 @@ class App extends React.Component {
         url="https://github.com/afeiship/react-ant-baidu-pan-input">
         <ReactAntBaiduPanInput
           defaultValue={
-            '链接:https://pan.baidu.com/s/1iyNPAJ7guBjZqtRZdht2cA  密码:fr1o'
+            '链接: https://pan.baidu.com/s/18vxz9B43rdAVTQ8QhmJ_ng 提取码: 1goo'
           }
           onChange={(e) => {
             console.log(e.target.value);

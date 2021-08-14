@@ -34,7 +34,7 @@ export default class ReactAntBaiduPanInput extends Component {
 
   getValue(inValue) {
     if (!inValue) return {};
-    const values = inValue.match(/链接:(.*?)\s+密码:(.*)?/);
+    const values = inValue.match(/链接:(.*?)\s+提取码:(.*)?/);
     return { url: values[1].trim(), key: values[2].trim() };
   }
 
