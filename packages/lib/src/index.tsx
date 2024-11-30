@@ -21,7 +21,7 @@ export type ReactAntBaiduPanInputProps = {
   /**
    * The default value of input.
    */
-  onChange?: (value: any) => void;
+  onChange?: (value: ReturnValue) => void;
 } & HTMLAttributes<HTMLDivElement>;
 
 export type ReactAntBaiduPanInputState = {
