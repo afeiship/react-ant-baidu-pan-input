@@ -1,0 +1,15 @@
+.react-ant-baidu-pan-input {
+  &__table {
+    border-collapse: collapse;
+    &,
+    td,
+    th {
+      border: 1px solid #ccc;
+    }
+
+    td,
+    th {
+      padding: 5px;
+    }
+  }
+}
